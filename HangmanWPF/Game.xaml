@@ -1,0 +1,64 @@
+﻿<Window x:Class="HangmanWPF.Game"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HangmanWPF"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="HangMan
+        " Height="400" Width="600">
+    <Grid Margin="1,292,1,0.5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="AButton" Grid.Column="0" Content="A" Background="White" Click="Button_Click"/>
+        <Button x:Name="BButton" Grid.Column="1" Content="B" Background="White" Click="Button_Click"/>
+        <Button x:Name="CButton" Grid.Column="2" Content="C" Background="White" Click="Button_Click"/>
+        <Button x:Name="DButton" Grid.Column="3" Content="D" Background="White" Click="Button_Click"/>
+        <Button x:Name="EButton" Grid.Column="4" Content="E" Background="White" Click="Button_Click"/>
+        <Button x:Name="FButton" Grid.Column="5" Content="F" Background="White" Click="Button_Click"/>
+        <Button x:Name="GButton" Grid.Column="6" Content="G" Background="White" Click="Button_Click"/>
+        <Button x:Name="HButton" Grid.Column="7" Content="H" Background="White" Click="Button_Click"/>
+        <Button x:Name="IButton" Grid.Column="8" Content="I" Background="White" Click="Button_Click"/>
+        <Button x:Name="JButton" Grid.Column="9" Content="J" Background="White" Click="Button_Click"/>
+        <Button x:Name="KButton" Grid.Column="10" Content="K" Background="White" Click="Button_Click"/>
+        <Button x:Name="LButton" Grid.Column="11" Content="L" Background="White" Click="Button_Click"/>
+        <Button x:Name="MButton" Grid.Column="12" Content="M" Background="White" Click="Button_Click"/>
+        <Button x:Name="NButton" Grid.Row="1" Grid.Column="0" Content="N" Background="White" Click="Button_Click"/>
+        <Button x:Name="OButton" Grid.Row="1" Grid.Column="1" Content="O" Background="White" Click="Button_Click"/>
+        <Button x:Name="PButton" Grid.Row="1" Grid.Column="2" Content="P" Background="White" Click="Button_Click"/>
+        <Button x:Name="QButton" Grid.Row="1" Grid.Column="3" Content="Q" Background="White" Click="Button_Click"/>
+        <Button x:Name="RButton" Grid.Row="1" Grid.Column="4" Content="R" Background="White" Click="Button_Click"/>
+        <Button x:Name="SButton" Grid.Row="1" Grid.Column="5" Content="S" Background="White" Click="Button_Click"/>
+        <Button x:Name="TButton" Grid.Row="1" Grid.Column="6" Content="T" Background="White" Click="Button_Click"/>
+        <Button x:Name="UButton" Grid.Row="1" Grid.Column="7" Content="U" Background="White" Click="Button_Click"/>
+        <Button x:Name="VButton" Grid.Row="1" Grid.Column="8" Content="V" Background="White" Click="Button_Click"/>
+        <Button x:Name="WButton" Grid.Row="1" Grid.Column="9" Content="W" Background="White" Click="Button_Click"/>
+        <Button x:Name="XButton" Grid.Row="1" Grid.Column="10" Content="X" Background="White" Click="Button_Click"/>
+        <Button x:Name="YButton" Grid.Row="1" Grid.Column="11" Content="Y" Background="White" Click="Button_Click"/>
+        <Button x:Name="ZButton" Grid.Row="1" Grid.Column="12" Content="Z" Background="White" Click="Button_Click"/>
+        <Canvas x:Name="hangmanCanvas" Grid.ColumnSpan="4" Grid.Column="8" HorizontalAlignment="Left" Height="218" Margin="32.5,-263,0,0" VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="secretWordTextBox" IsReadOnly="True" BorderThickness="0px" Grid.ColumnSpan="8" HorizontalAlignment="Left" Height="48" Margin="17,-215,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="302" FontSize="30" Grid.Column="2"/>
+        <Label x:Name="label" Grid.ColumnSpan="2" Content="Attempts:" HorizontalAlignment="Left" Margin="22,-263,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.237,0.135" FontWeight="Bold"/>
+        <TextBox x:Name="numberAttempsTextBox" IsReadOnly="True" BorderThickness="0px" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="42.5,-257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46"/>
+    </Grid>
+
+</Window>
